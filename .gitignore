@@ -1,0 +1,129 @@
+# ================================
+# Python
+# ================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ================================
+# Virtual environments
+# ================================
+
+# Common venv names
+.venv/
+venv/
+env/
+ENV/
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Pyenv
+.python-version
+
+# ================================
+# Distribution / packaging
+# ================================
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Wheels
+*.whl
+
+# ================================
+# Testing / coverage
+# ================================
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ================================
+# Jupyter / IPython
+# ================================
+
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ================================
+# Logs / runtime
+# ================================
+
+*.log
+*.pid
+
+# ================================
+# OS files
+# ================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# ================================
+# Editors / IDEs
+# ================================
+
+# VS Code
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+
+# Neovim / Vim
+.nvim/
+*.swp
+*.swo
+Session.vim
+
+# ================================
+# Type checkers / linters
+# ================================
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ruff
+.ruff_cache/
+
+# Pyright
+.pyright/
+
+# ================================
+# Environment / secrets
+# ================================
+
+.env
+.env.*
+*.env
+
+# ================================
+# Local config overrides
+# ================================
+
+config.local.py
+settings.local.py
