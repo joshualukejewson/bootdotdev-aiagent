@@ -1,4 +1,6 @@
 import os.path
+from google import genai
+from google.genai import types
 
 
 MAX_CHARS = 10000
@@ -24,3 +26,18 @@ def get_file_content(working_directory, file_path):
 
     except Exception:
         return "Error: general error while reading contents regarding sys module."
+
+
+schema_get_file_content = types.FunctionDeclaration(
+    name="get_file_content",
+    description="Reads the given file in the current working directroy, providing the file contents as a string limited to 10000 chars.",
+    parameters=types.Schema(
+        type=types.Type.OBJECT,
+        properties={
+            "file_path": types.Schema(
+                type=types.Type.STRING,
+                description="File path to file to be opened and have its contents read relative to the working directory.",
+            ),
+        },
+    ),
+)
